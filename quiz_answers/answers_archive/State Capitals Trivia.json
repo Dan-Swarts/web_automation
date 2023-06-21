@@ -1,0 +1,74 @@
+{
+    "What is the capital of California?": [
+        "San Francisco",
+        "San Diego",
+        "Sacramento",
+        "Los Angeles"
+    ],
+    "What is the capital of Oklahoma?": [
+        "Oklahoma City",
+        "Broken Arrow",
+        "Norman",
+        "Tulsa"
+    ],
+    "What is the capital of Hawaii?": [
+        "Hilo",
+        "Maui",
+        "Pearl City",
+        "Honolulu"
+    ],
+    "What is the capital of Kentucky?": [
+        "Frankfort",
+        "Bowling Green",
+        "Louisville",
+        "Lexington"
+    ],
+    "What is the capital of Iowa?": [
+        "Sioux City",
+        "Des Moines",
+        "Cedar Rapids",
+        "Davenport"
+    ],
+    "What is the capital of Missouri?": [
+        "Jefferson City",
+        "Bloomfield",
+        "Kansas City",
+        "Clark"
+    ],
+    "What is the capital of Minnesota?": [
+        "Minneappolis",
+        "Bloomington",
+        "Saint Paul",
+        "Rochester"
+    ],
+    "What is the capital of Arkansas?": [
+        "Fayetteville",
+        "Springdale",
+        "Little Rock",
+        "Fort Smith"
+    ],
+    "What is the capital of New York?": [
+        "Ithaca",
+        "Albany",
+        "New York City",
+        "Saratoga"
+    ],
+    "What is the capital of Delaware?": [
+        "Wilmington",
+        "Newark",
+        "Middleton",
+        "Dover"
+    ],
+    "What is the capital of Oregon?": [
+        "Falem",
+        "Salem",
+        "Eugene",
+        "Portland"
+    ],
+    "What is the capital of Kansas?": [
+        "Topeka",
+        "Lawrence",
+        "Kansas City",
+        "Wichita"
+    ]
+}
