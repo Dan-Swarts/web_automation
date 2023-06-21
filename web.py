@@ -8,7 +8,7 @@ import json
 import random
 
 # will click on an element, with added delay
-def click_element(driver,element,min=0.2,max=0.4):
+def click_element(driver,element,min=2.3,max=3):
     actions = ActionChains(driver)
     
     actions\
