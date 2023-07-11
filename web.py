@@ -38,7 +38,7 @@ def login(driver,uid):
     logs into wizard101
 
     Inputs:
-        - driver: the selerium website driver which is tuned into the wizard101 trivia page
+        - driver: the selenium website driver which is tuned into the wizard101 trivia page
         - user: a dictionary with all information about one particular account, such as username and password.
     """
 
@@ -81,7 +81,7 @@ def logout(driver,uid):
     records the number of crowns and logs out of wizard101 account
 
     Inputs:
-        - driver: the selerium website driver which is tuned into the wizard101 trivia page
+        - driver: the selenium website driver which is tuned into the wizard101 trivia page
         - user: a dictionary with all information about one particular account, such as username and password.
     """
 
@@ -100,7 +100,7 @@ def logout(driver,uid):
 
     # record crown balance: 
     balance = driver.find_element(By.CLASS_NAME,"crownsbalance").text
-    balance = int(balance)
+    balance = int(balance.replace(',','').replace(' ',''))
     user["crowns"] = balance
 
     # ensure correct 
@@ -126,7 +126,7 @@ def identify_quizzes(driver):
     identify all available quizzes 
 
     Inputs:
-        - driver: the selerium website driver which is tuned into the wizard101 trivia page
+        - driver: the selenium website driver which is tuned into the wizard101 trivia page
         - solved_quizzes: a list of the quizzes to exclude from the output
 
     Outputs:
@@ -211,7 +211,7 @@ def download_quiz(driver,quiz_name):
         print("we found it")
         
     except TimeoutException:
-        # if a timeout exeption occurs because the widget doesn't appear, 
+        # if a timeout exception occurs because the widget doesn't appear, 
         # continue as normal
         input("please do the recaptcha")
 
@@ -229,7 +229,7 @@ def download_quiz(driver,quiz_name):
         click_element(driver,home)
 
     except TimeoutException:
-        # if a timeout exeption occurs because the widget doesn't appear, 
+        # if a timeout exception occurs because the widget doesn't appear, 
         # continue as normal
         print("didn't appear")
     return None

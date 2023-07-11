@@ -51,7 +51,7 @@ def solve_quiz(driver,quiz_name):
             else:
                 index = possible_answers.index(true_answer)
 
-        # case 3: this question hasn't been recorded among the answers. prepare to add it. 
+        # case 3: this question hasn't been recorded among the answers. add it. 
         # guess.
         except KeyError:
             answer_dict[question] = possible_answers

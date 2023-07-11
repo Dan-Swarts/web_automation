@@ -14,5 +14,77 @@
     "Which was the last Apollo mission?": "Apollo 17",
     "Which astronaut was not present on the Apollo 11 mission?": "Cernan",
     "Which mission was the first night launch?": "Apollo 17",
-    "Which mission broadcasted some of the first live television pictures from space?": "Apollo 7"
+    "Which mission broadcasted some of the first live television pictures from space?": "Apollo 7",
+    "What is the brightest star in the Pegasus constellation?": [
+        "Enif",
+        "M15",
+        "Markab",
+        "Alpheratz"
+    ],
+    "This bright star in Auriga is yellow like our sun.": [
+        "Capella",
+        "Alnath",
+        "M38",
+        "Menkalinan"
+    ],
+    "What is the brightest star in Cygnus?": [
+        "M29",
+        "Sadr",
+        "Deneb",
+        "Albireo"
+    ],
+    "Which constellation can you find M44 or the \"Beehive Cluster\" in?": [
+        "Auriga",
+        "Aries",
+        "Cancer",
+        "Aquila"
+    ],
+    "What is the brightest star in the Aquila constellation?": [
+        "Epsilon Aquilae",
+        "Altair",
+        "Deneb al Okab",
+        "Zeta"
+    ],
+    "Aquila is a constellation named after what bird?": [
+        "Owl",
+        "Pigeon",
+        "Hawk",
+        "Eagle"
+    ],
+    "What shape marks the Pegasus constellation?": [
+        "Great Circle",
+        "Great Rectangle",
+        "Great Square",
+        "Great Star"
+    ],
+    "Cancer is a constellation in the shape of what animal?": [
+        "Lion",
+        "Ram",
+        "Crab",
+        "Cat"
+    ],
+    "The Gemini constellation represents _______.": [
+        "Twins",
+        "Parents",
+        "Friends",
+        "Triplets"
+    ],
+    "Which is the brightest star in the Canis Major constellation?": [
+        "Sirius",
+        "Adhara",
+        "Wezen",
+        "Murzim"
+    ],
+    "The constellation Cygnus is in the shape of what bird?": [
+        "Swan",
+        "Eagle",
+        "Phoenix",
+        "Dove"
+    ],
+    "The Lyra constellation is in the shape of a what?": [
+        "Guitar",
+        "Harp",
+        "Banjo",
+        "Drum"
+    ]
 }

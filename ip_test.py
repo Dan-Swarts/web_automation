@@ -19,8 +19,13 @@ import signal
 import os
 import sys
 import argparse
+from http_request_randomizer.requests.proxy.requestProxy import RequestProxy
+from selenium.webdriver.common.proxy import Proxy, ProxyType
 
-def worker(uids):
+def worker(config_file):
+    # connect to the respective VPN tunnel: 
+    connect(config_file)
+
     # set up chrome driver
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
@@ -48,70 +53,62 @@ def worker(uids):
         # continue as normal
         print("cookie widget didn't appear")
 
-    # solve the quizzes
-    for uid in uids:
-        solve_quizzes(driver,uid)
+    # wait
+    input("waiting")
 
     driver.quit
     return
 
-def solved_false():
-    # Open the accounts
-    with open("accounts.json", "r") as file:
-        accounts = json.load(file)
 
-    # Update the each account to unsolved
-    for value in accounts.values():
-        value['solved'] = False
+def connect(config_file,auth_file="ip_config_files/auth_user_pass.txt"):
+    # sudo password
+    with open(auth_file, "r") as file:
+        sudo = file.readlines()[2]
 
-    # Write the updated data back to the same file
-    with open("accounts.json", "w") as file:
-        json.dump(accounts, file, indent=4)
+    command = f'echo {sudo} | sudo -S openvpn --config "{config_file}" --auth-user-pass {auth_file}'
+    subprocess.Popen(command, shell=True)
+    input()
     return
 
 
 if __name__ == '__main__':
 
-    # take in arguments:
-    parser = argparse.ArgumentParser(description='ALL')
-    parser.add_argument('--reset',type=bool,default=False)
-    parser.add_argument('--num_processes',type=int,default=1)
-    args = parser.parse_args()
-
-    # optional: set solved status to False. do this when running for the first time each day.
-    if args.reset:
-        solved_false()
-        exit()
-
     # Number of processes
-    num_processes = args.num_processes
-
-    # grab all accounts that need to do the trivia for
-    with open('accounts.json','r') as file:
-        accounts = json.load(file)
-        # grab every UID that isn't solved:
-        keys = []
-        for key, value in accounts.items():
-            if value['solved'] == False:
-                keys.append(key)
+    num_processes = 1
 
 
-    # Split the work between processes:
-    key_parts = [[] for _ in range(num_processes)]
+    # dir = "ip_config_files"
+    # config_files = []
+    # for fname in os.listdir(dir):
+    #     if fname.endswith('.ovpn'):
+    #         relative_path = dir + "/" + fname
+    #         config_files.append(relative_path)
+    # print(config_files)
 
-    # populate the array using modulo
-    for i, key in enumerate(keys):
-        index = i % num_processes
-        key_parts[index].append(key)
+    # connect(config_files[0])
 
-    input("please ensure that you are using a vpn")
+    # Set up the proxy server
+    PROXY = Proxy()
+    PROXY.proxy_type = ProxyType.MANUAL
+    PROXY.http_proxy = '139.227.109.43:44844'
+    PROXY.ssl_proxy = '139.227.109.43:44844'
 
-    # Create a process pool
-    pool = multiprocessing.Pool(processes=num_processes)
 
-    # Apply algorithm to each portion of the keys
-    pool.map(worker, key_parts)
+
+    # set up chrome driver
+    chrome_options = Options()
+    chrome_options.add_argument('--proxy-server=%s' % PROXY)
+    chrome_service = ChromeService(executable_path='/usr/local/bin/chromedriver')
+    driver = webdriver.Chrome(service=chrome_service,options=chrome_options)
+
+    # access the internet
+    driver.get("https://www.wizard101.com/game")
+    input("pause")
+
+    # # Create a process pool
+    # pool = multiprocessing.Pool(processes=num_processes)
+
+    # # Apply algorithm to each portion of the keys
+    # pool.map(worker, config_files)
 
     # Close the process pool
-    pool.close()
-    pool.join()
