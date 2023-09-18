@@ -85,7 +85,7 @@ def solve_quiz(driver,quiz_name):
     claim_your_reward = wait.until(EC.visibility_of_element_located((By.ID, "submit")))
     click_element(driver,claim_your_reward)
 
-    # switch back to defaut iframe
+    # switch back to default iframe
     driver.switch_to.default_content()
     
     # bring it back to the home page
@@ -111,7 +111,7 @@ def solve_quizzes(driver,uid):
 
     
     # the skip variable is enacted if a quiz has already been completed today. this will cause 
-    # the bot to skip one iteration in order to proceed without causeing an error
+    # the bot to skip one iteration in order to proceed without causing an error
     skip = False
 
     for i in range(1,11):
@@ -131,7 +131,7 @@ def solve_quizzes(driver,uid):
         click_element(driver,q_element)
 
 
-        # this exeption is meant to catch the error caused when a quiz has already been completed. 
+        # this exemption is meant to catch the error caused when a quiz has already been completed. 
         # this will cause the page not to not go to the quiz, since it is unavailable. then the 
         # elements of the quiz will not be found.
         try:

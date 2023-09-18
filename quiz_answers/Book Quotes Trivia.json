@@ -14,5 +14,77 @@
     "\"I'm not afraid of storms, for I'm learning how to sail my ship.\"": "Little Women",
     "\"Don't ever tell anybody anything. If you do, you start missing everybody.\"": "The Catcher in the Rye",
     "\"The sky above the port was the color of television, tuned to a dead channel.\"": "Neuromancer",
-    "\"Most people were heartless about turtles because a turtle's heart will beat for hours after it has been cut up and butchered. But the old man thought, I have such a heart too.\"": "The Old Man and the Sea"
+    "\"Most people were heartless about turtles because a turtle's heart will beat for hours after it has been cut up and butchered. But the old man thought, I have such a heart too.\"": "The Old Man and the Sea",
+    "The Gemini constellation represents _______.": [
+        "Friends",
+        "Twins",
+        "Parents",
+        "Triplets"
+    ],
+    "The constellation Libra represents a ___________.": [
+        "Lion",
+        "Water Bearer",
+        "Balance Scale",
+        "Chariot"
+    ],
+    "Canis Major is otherwise known as the Great _____.": [
+        "Dog",
+        "Crab",
+        "Cat",
+        "Dolphin"
+    ],
+    "What is the brightest star in the Aquila constellation?": [
+        "Altair",
+        "Zeta",
+        "Epsilon Aquilae",
+        "Deneb al Okab"
+    ],
+    "The constellation Cygnus is in the shape of what bird?": [
+        "Dove",
+        "Phoenix",
+        "Eagle",
+        "Swan"
+    ],
+    "Aquila is a constellation named after what bird?": [
+        "Pigeon",
+        "Eagle",
+        "Owl",
+        "Hawk"
+    ],
+    "What is the brightest star in Cygnus?": [
+        "Sadr",
+        "M29",
+        "Deneb",
+        "Albireo"
+    ],
+    "Which constellation can you find M44 or the \"Beehive Cluster\" in?": [
+        "Aries",
+        "Auriga",
+        "Cancer",
+        "Aquila"
+    ],
+    "What is the brightest star in the Lyra constellation?": [
+        "Sadr",
+        "Beta Lyrae",
+        "M57",
+        "Vega"
+    ],
+    "Which is the brightest star in the Aries constellation?": [
+        "Hamal",
+        "Altair",
+        "Epsilon Aquilae",
+        "Zeta"
+    ],
+    "What is the brightest star in the Leo constellation?": [
+        "Denebola",
+        "M83",
+        "Regulus",
+        "Sadr"
+    ],
+    "Which constellation holds the brightest star in the north sky?": [
+        "Canis Major",
+        "Cancer",
+        "Pegasus",
+        "Aquila"
+    ]
 }

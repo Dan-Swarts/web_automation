@@ -52,13 +52,6 @@
 </div>
 
 <div>
-  <h1>Ethics</h1>
-  <p>
-    Using this software may be unethical. The online quizzes were meant for educational purposes; not to be gamed by automation for free rewards. Additionally, the ReCAPTCHAs are proof that the owners do not want bots on their site.
-  </p>
-</div>
-
-<div>
   <h1>How to Use It Yourself</h1>
   <p>
     To utilize this automation code for quizzes, follow the steps outlined below:

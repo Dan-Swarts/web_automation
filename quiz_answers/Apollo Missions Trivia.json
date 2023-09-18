@@ -86,5 +86,47 @@
         "Harp",
         "Banjo",
         "Drum"
+    ],
+    "Which is the brightest star in the Aries constellation?": [
+        "Hamal",
+        "Altair",
+        "Zeta",
+        "Epsilon Aquilae"
+    ],
+    "Capricornus is in the shape of what mythical animal?": [
+        "Sea-Goat",
+        "Pegasus",
+        "Phoenix",
+        "Mermaid"
+    ],
+    "What is the brightest star in the Lyra constellation?": [
+        "M57",
+        "Sadr",
+        "Vega",
+        "Beta Lyrae"
+    ],
+    "Aries is a constellation named after what animal?": [
+        "Dog",
+        "Eagle",
+        "Ram",
+        "Horse"
+    ],
+    "Canis Major is otherwise known as the Great _____.": [
+        "Dolphin",
+        "Dog",
+        "Cat",
+        "Crab"
+    ],
+    "What is the brightest star in the Leo constellation?": [
+        "M83",
+        "Regulus",
+        "Denebola",
+        "Sadr"
+    ],
+    "The constellation Libra represents a ___________.": [
+        "Balance Scale",
+        "Chariot",
+        "Lion",
+        "Water Bearer"
     ]
 }

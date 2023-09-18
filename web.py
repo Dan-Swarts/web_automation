@@ -8,18 +8,19 @@ import json
 import random
 
 # will click on an element, with added delay
-def click_element(driver,element,min=2.3,max=3):
+def click_element(driver,element,min=1.3,max=2):
     actions = ActionChains(driver)
     
     actions\
     .pause(random.uniform(min, max))\
     .move_to_element(element)\
-    .pause(random.uniform(1, 3))\
+    .pause(random.uniform(1.4, 1.6))\
     .click()\
     .perform()
 
     return None
 
+# Human-like typing
 def type(actions,element,input):
     actions\
     .move_to_element(element)\
@@ -85,7 +86,7 @@ def logout(driver,uid):
         - user: a dictionary with all information about one particular account, such as username and password.
     """
 
-    # acess the accounts
+    # access the accounts
     with open('accounts.json') as f:
         users = json.load(f)
 
@@ -103,7 +104,7 @@ def logout(driver,uid):
     balance = int(balance.replace(',','').replace(' ',''))
     user["crowns"] = balance
 
-    # ensure correct 
+    # record that this user is solved
     user["solved"] = True
 
     # update json with balance
@@ -111,7 +112,7 @@ def logout(driver,uid):
         json.dump(users, file, indent=4)
 
     # go back to home page
-    time.sleep(0.5)
+    time.sleep(1.6)
     driver.get("https://www.wizard101.com/game/trivia")
 
     # find the logout button
