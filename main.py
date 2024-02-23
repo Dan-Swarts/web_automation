@@ -24,7 +24,7 @@ def worker(uids):
     # set up chrome driver
     chrome_options = Options()
     chrome_options.add_argument("--start-maximized")
-    chrome_service = ChromeService(executable_path='/usr/local/bin/chromedriver')
+    chrome_service = ChromeService(executable_path='/usr/bin/chromedriver')
     driver = webdriver.Chrome(service=chrome_service,options=chrome_options)
 
     # access the internet
