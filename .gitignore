@@ -1,5 +1,5 @@
 __pycache__/
 google-chrome-stable_current_amd64.deb/
 accounts.json
-config/
+vpn_config/
 openVPN_credentials.json
